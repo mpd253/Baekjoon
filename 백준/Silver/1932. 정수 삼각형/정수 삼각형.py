@@ -1,8 +1,14 @@
+# 삼각형의 크기 지정하기
 size = int(input())
+# 숫자를 담을 배열
 num = []
+
 for i in range(size):
     num.append(list(map(int, input().split())))
+
 start = 2
+
+# 점화식 사용
 for i in range(1, size):
     for j in range(start):
         # 맨 왼쪽이면 위에서 내려오는 친구와 더하기
